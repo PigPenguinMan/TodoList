@@ -11,4 +11,4 @@ const bodyBackground = document.querySelector("body");
 
 // 바디에 이미지 추가 
 // css에서 이미지 추가하는 방식과 동일
-bodyBackground.style.background = `url(./img/${chooseImg})`;
+bodyBackground.style.background = `url(./img/${chooseImg}) no-repeat `;
