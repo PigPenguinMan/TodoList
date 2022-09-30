@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>TodoList</title>
 </head>
 <body>
@@ -13,16 +13,16 @@
 
     <!-- 로그인-->
     <form id="login_Form">
-        <input type="text" id="name">
-        <input type="button" value="로그인">
+        <input type="text" id="name" required>
+        <input type="submit" value="로그인">
     </form>
-    <!--Todo 입력공간-->
-    <form id="todo_Form">
+    <!--todo 입력공간-->
+    <form id="todo_Form" class="hidden">
         <h1 id="title">반갑습니다</h1>
         <input type="text" id="todo">
         <input type="button" value="추가">
     </form>
-    <!--Todo 폼 출력공간 -->
+    <!--todo board 출력공간 -->
     <ul id="todo_board">
         <li>
             <!--체크박스 , 문자열 , X버튼 순으로 나옴-->
@@ -34,8 +34,11 @@
 
     <!-- 자바스크립트-->
     <script src="./JS/backgroind.js"></script>
-    <script src="./JS/js.js"></script>
     <script src="./JS/clock.js"></script>
+    <script src="./JS/login.js"></script>
+    <script src="./JS/todolist.js"></script>
+    <script src="./JS/js.js"></script>
+
 
 </body>
 </html> 

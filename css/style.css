@@ -1,0 +1,15 @@
+.hidden {
+    display: none;
+}
+
+body {
+    background-repeat: 1;
+    text-align: center;
+    
+}
+
+
+#clock {
+    text-align: center;
+}
+
