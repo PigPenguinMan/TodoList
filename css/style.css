@@ -1,21 +1,40 @@
-.hidden {
+@font-face {
+    font-family: 'MabinogiClassic';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NexonMabinogi/MabinogiClassic.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NexonMabinogi/MabinogiClassic.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NexonMabinogi/MabinogiClassic.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NexonMabinogi/MabinogiClassic.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/NexonMabinogi/MabinogiClassic.ttf') format("truetype");
+    font-display: swap;
+} 
+.hidden{
     display: none;
+    background-size: co;
 }
 
 
-
+body{
+    /* background-color: darkslategrey; */
+    font-family: 'MabinogiClassic';
+    
+}
 
 #clock {
     color:white;
     text-align: center;
     text-shadow: 0px 0px 7px black;
     font-size: 4em;
+    
 }
 
 form {
     text-align: center;
 }
-
+#todo_form {
+    background-color: rgba(47,79,79,0.5);
+}
 #todo_board {   
     text-align: center;   
 }
@@ -28,6 +47,7 @@ form input[type="text"] {
     border: none;
     border-bottom: 1px solid white;
     color: white;
+
 }
 form input[type="text"]:focus{
     outline: none;
@@ -50,8 +70,10 @@ form input[type="button"],
 }
 
 #todo_board li button{
-  background-color: transparent;
+  margin-left: 5px;
 }
-form input[type="submit"]:hover,form input[type="button"]{
-    background-color: brown;
+form input[type="submit"]:hover,
+form input[type="button"]:hover,
+#todo_board li button:hover{
+    background-color:#FFBF00;
 }

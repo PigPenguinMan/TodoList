@@ -24,7 +24,6 @@ function addTodo(){
     const textNode = document.createTextNode(text);
     const button = document.createElement("button")
     button.innerHTML = "X";
-    button.classList = "removeButton";
     // li요소 - input ,textnode , button 추가
     li.appendChild(checkbox);
     li.appendChild(textNode);
@@ -38,19 +37,22 @@ function addTodo(){
     // 체크 박스를 눌렀을때 이벤트 리스너 실행 :click
     checkbox.addEventListener("click",todoCheck)
 
-    // X버튼을 눌러 삭제
-    const removeButton =document.querySelector(".removeButton");
-    removeButton.addEventListener("click",removeBtn);
-    function removeBtn(e){
-        e.target.parentNode.remove();
-    }
+   // X버튼을 눌러 삭제
+    button.addEventListener("click",removeBtn)
 }
 
+ 
+ function removeBtn(e){
+    const li = e.target.parentNode;
+    li.remove();
+ }
 // 체크박스 이벤트 리스너에 들어가는 함수
 function todoCheck(e){
     const li = e.target.parentNode ;
-    if(e.target.checked)
+    if(e.target.checked){
         li.style.color = "lightgray";
-    else 
+        li.style.textDecorationLine = "line-through";
+    
+    }else 
         li.style.color = "black";
     }  

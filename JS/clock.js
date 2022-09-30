@@ -1,5 +1,5 @@
 // id가 clock인 문서 객체를 들고옴
-const clock = bodyBackground.querySelector("#clock");
+const clock = document.querySelector("#clock");
 
 // 인터벌 함수에 콜백 함수로 넣어주기 위함 
 function getClock(){
